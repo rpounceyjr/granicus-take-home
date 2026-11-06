@@ -6,7 +6,7 @@
     "location": { "lat": 40.6602, "lng": -73.969, "address": "Brooklyn, NY 11225" },
     "amenities": ["playground", "dog-run", "trails", "restrooms", "parking", "lake", "picnic-areas"],
     "hours": "6:00 AM - 1:00 AM",
-    "images": ["https://images.example.com/prospect-1.jpg", "https://images.example.com/prospect-2.jpg"],
+    "images": ["/images/park-8.jpg", "https://images.example.com/prospect-2.jpg"],
     "acreage": 526,
     "rating": 4.7
   },
@@ -17,7 +17,7 @@
     "location": { "lat": 40.8009, "lng": -73.9722, "address": "Riverside Dr, New York, NY 10024" },
     "amenities": ["trails", "restrooms", "waterfront", "bike-path"],
     "hours": "6:00 AM - 10:00 PM",
-    "images": ["https://images.example.com/riverside-1.jpg"],
+    "images": ["/images/park-9.jpg"],
     "acreage": 91,
     "rating": 4.4
   },
@@ -61,7 +61,7 @@
     "location": { "lat": 40.7282, "lng": -73.7949, "address": "Memorial Dr, Queens, NY 11367" },
     "amenities": ["sports-fields", "trails", "restrooms", "parking", "playground"],
     "hours": "7:00 AM - 11:00 PM",
-    "images": ["https://images.example.com/veterans-1.jpg"],
+    "images": ["/images/park-1.jpg"],
     "acreage": 47,
     "rating": 4.2
   },
@@ -72,7 +72,7 @@
     "location": { "lat": 40.6215, "lng": -74.0776, "address": "12 Old Mill Ln" },
     "amenities": ["gardens", "restrooms", "cafe", "gift-shop", "accessible-paths"],
     "hours": "9:00 AM - 5:00 PM",
-    "images": ["https://images.example.com/oldmill-1.jpg", "https://images.example.com/oldmill-2.jpg"],
+    "images": ["/images/park-2.jpg", "/images/park-3.jpg"],
     "acreage": 34,
     "rating": 4.6
   },
@@ -83,7 +83,7 @@
     "location": { "lat": 40.5795, "lng": -73.9707, "address": "Shore Pkwy" },
     "amenities": ["waterfront", "fishing", "kayak-launch", "picnic-areas", "parking"],
     "hours": "Dawn to dusk",
-    "images": ["https://images.example.com/lakeshore-1.jpg"],
+    "images": ["/images/park-4.jpg"],
     "acreage": 18,
     "rating": 4.3
   },
@@ -105,7 +105,7 @@
     "location": { "lat": 40.7549, "lng": -73.984, "address": "1 Plaza Way" },
     "amenities": ["event-lawn", "wifi", "restrooms", "food-vendors", "accessible-paths"],
     "hours": "24 hours",
-    "images": ["https://images.example.com/plaza-1.jpg"],
+    "images": ["/images/park-5.jpg"],
     "acreage": 6,
     "rating": 4.0
   },
@@ -116,7 +116,7 @@
     "location": { "lat": 40.6001, "lng": -74.0899, "address": "Creek Rd" },
     "amenities": ["boardwalk", "wildlife-viewing", "trails", "accessible-paths"],
     "hours": "Dawn to dusk",
-    "images": ["https://images.example.com/willow-1.jpg"],
+    "images": ["/images/park-6.jpg"],
     "acreage": 78,
     "rating": 4.5
   },
@@ -127,7 +127,7 @@
     "location": { "lat": 40.6934, "lng": -73.9876, "address": "Hillcrest Ave" },
     "amenities": ["skate-park", "restrooms", "lighting"],
     "hours": "8:00 AM - 10:00 PM",
-    "images": ["https://images.example.com/hillcrest-1.jpg"],
+    "images": ["/images/park-7.jpg"],
     "acreage": 2,
     "rating": 3.9
   }

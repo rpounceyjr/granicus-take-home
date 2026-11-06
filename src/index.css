@@ -1,0 +1,220 @@
+:root {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+:focus-visible {
+  outline: 3px solid #0b57d0;
+  outline-offset: 2px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    'list'
+    'main'
+    'photos';
+  gap: 1.5rem;
+}
+
+.layout {
+  --column-heading-height: 2rem;
+  --column-heading-gap: 0.75rem;
+}
+
+.layout h2 {
+  margin: 0 0 var(--column-heading-gap);
+  font-size: 1.5rem;
+  line-height: var(--column-heading-height);
+}
+
+.park-list {
+  grid-area: list;
+  min-width: 0;
+}
+
+.layout-main {
+  grid-area: main;
+}
+
+.park-photos {
+  grid-area: photos;
+  min-width: 0;
+}
+
+@media (min-width: 49rem) {
+  .layout {
+    grid-template-columns: minmax(16rem, 1fr) 2fr;
+    grid-template-areas:
+      'list main'
+      'list photos';
+    align-items: start;
+  }
+}
+
+@media (min-width: 64rem) {
+  .layout {
+    grid-template-columns: minmax(14rem, 1fr) 2fr minmax(14rem, 1fr);
+    grid-template-areas: 'list main photos';
+  }
+
+  /* The photos column has no heading; offset it so photos align with the map and list. */
+  .park-photos {
+    padding-top: calc(var(--column-heading-height) + var(--column-heading-gap));
+  }
+
+  /* Photos share the viewport height instead of pushing the page into a scroll. */
+  .layout .park-photos ul {
+    grid-template-columns: 1fr;
+  }
+
+  .layout .park-photos img {
+    max-height: calc((100vh - 8rem) / var(--photo-count, 1));
+    object-fit: cover;
+  }
+}
+
+.layout-main {
+  display: grid;
+  gap: 1.5rem;
+  min-width: 0;
+}
+
+.park-map-container {
+  height: 18rem;
+  border: 1px solid #767676;
+  border-radius: 4px;
+}
+
+@media (min-width: 49rem) {
+  .park-map-container {
+    height: 26rem;
+  }
+}
+
+.park-map-note {
+  margin: 0 0 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid #767676;
+  background: #f2f2f2;
+}
+
+.park-marker-selected {
+  filter: hue-rotate(150deg) saturate(1.5);
+}
+
+.leaflet-marker-icon:focus-visible {
+  outline: 3px solid #0b57d0;
+  outline-offset: 2px;
+}
+
+.park-details-address {
+  font-weight: 600;
+}
+
+.park-details-note,
+.park-details-address {
+  margin: 0.25rem 0;
+}
+
+.park-details-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 0 1.5rem;
+  align-items: start;
+}
+
+.park-details-facts h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.park-details-facts ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.park-details-facts dl {
+  margin: 0;
+}
+
+.park-details dt {
+  font-weight: 600;
+}
+
+.park-details dd {
+  margin: 0 0 0.5rem;
+}
+
+.park-photos ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+}
+
+.park-photos img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.park-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.park-list li + li {
+  margin-top: 0.5rem;
+}
+
+.park-list button {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  background: #ffffff;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.park-list button:hover {
+  background: #f2f2f2;
+}
+
+.park-list button[aria-pressed='true'] {
+  border: 2px solid #0b57d0;
+  background: #e8f0fe;
+}
+
+.park-list-name {
+  display: block;
+  font-weight: 600;
+}
+
+.park-list-meta {
+  display: block;
+  font-size: 0.875rem;
+  color: #4d4d4d;
+}
