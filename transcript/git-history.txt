@@ -1,0 +1,44 @@
+commit 5278bd49b573605911a8845d7952b679d7e54ab0
+Author: Roger Pouncey <rpounceyjr@gmail.com>
+Date:   2026-11-06 18:00:03 -0500
+
+    committing app and transcript for delivery
+
+ .../original-ask.md                                |    6 +
+ .gitignore                                         |   24 +
+ .npmrc                                             |    1 +
+ .oxlintrc.json                                     |    8 +
+ README.md                                          |  120 +
+ index.html                                         |   13 +
+ package-lock.json                                  | 2913 ++++++++++++++++++++
+ package.json                                       |   35 +
+ public/favicon.svg                                 |    1 +
+ public/images/park-1.jpg                           |  Bin 0 -> 509156 bytes
+ public/images/park-2.jpg                           |  Bin 0 -> 329985 bytes
+ public/images/park-3.jpg                           |  Bin 0 -> 350126 bytes
+ public/images/park-4.jpg                           |  Bin 0 -> 412436 bytes
+ public/images/park-5.jpg                           |  Bin 0 -> 257415 bytes
+ public/images/park-6.jpg                           |  Bin 0 -> 312619 bytes
+ public/images/park-7.jpg                           |  Bin 0 -> 271541 bytes
+ public/images/park-8.jpg                           |  Bin 0 -> 417571 bytes
+ public/images/park-9.jpg                           |  Bin 0 -> 416194 bytes
+ roger-pouncey-takehome-transcript.md               |  827 ++++++
+ src/App.test.tsx                                   |   68 +
+ src/App.tsx                                        |   36 +
+ parks.sample.json => src/assets/parks.sample.json  |   16 +-
+ src/components/ParkDetails.test.tsx                |   34 +
+ src/components/ParkDetails.tsx                     |   74 +
+ src/components/ParkList.tsx                        |   30 +
+ src/components/ParkMap.tsx                         |  119 +
+ src/components/ParkPhotos.tsx                      |   30 +
+ src/index.css                                      |  220 ++
+ src/main.tsx                                       |   10 +
+ src/normalizePark.test.ts                          |  148 +
+ src/normalizePark.ts                               |  138 +
+ src/test/setup.ts                                  |   10 +
+ src/types.ts                                       |   17 +
+ tsconfig.app.json                                  |   26 +
+ tsconfig.json                                      |    7 +
+ tsconfig.node.json                                 |   23 +
+ vite.config.ts                                     |   12 +
+ 37 files changed, 4958 insertions(+), 8 deletions(-)
